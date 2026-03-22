@@ -1,0 +1,54 @@
+name: Requirement
+description: Create a new requirement with clear acceptance criteria
+title: "[REQ] "
+labels: ["requirement"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short description of the requirement
+      placeholder: "What needs to be built?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Background
+      description: Why is this requirement needed? What problem does it solve?
+      placeholder: "Explain the business need or user story"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Define the conditions that must be met for this requirement to be considered complete
+      placeholder: |
+        - [ ] Condition 1
+        - [ ] Condition 2
+        - [ ] Condition 3
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Target Environment
+      description: Where will this requirement be implemented first?
+      options:
+        - kidsOnline (development)
+        - live (production)
+        - both
+      default: 0
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Links, screenshots, related issues, or technical hints
+      placeholder: "Optional"
+    validations:
+      required: false
