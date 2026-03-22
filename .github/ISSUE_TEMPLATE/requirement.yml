@@ -44,6 +44,21 @@ body:
         - both
       default: 0
 
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area (optional)
+      description: Which part of the system does this requirement affect?
+      options:
+        - Frontend
+        - Backend
+        - Database
+        - Integration
+        - Other
+      default: 0
+    validations:
+      required: false
+
   - type: textarea
     id: notes
     attributes:
