@@ -362,15 +362,6 @@ It also prevents:
 
 ---
 
-If you want, I can now:
-
-### 🔧 Add this section into the full Coding Standards document  
-### 📄 Generate the Git Workflow document  
-### 🔐 Generate the Security & Privacy Baseline  
-### 🧭 Generate the Audit & Traceability document  
-### 🧩 Generate the Cheat Sheet (top 10 rules)
-
-Which one do you want next, Hèlen?
 
 Contributors must follow this version until the next revision is published.
 
