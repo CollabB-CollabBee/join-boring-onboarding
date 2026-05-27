@@ -1,0 +1,42 @@
+name: Feature Request
+description: Propose a new feature or enhancement
+title: "[Feature] <short summary>"
+labels: ["feature"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: What is the feature?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      placeholder: Why is this needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      placeholder: Describe your idea
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: related
+    attributes:
+      label: Related Issues / PRs
+      placeholder: "#123"
