@@ -1,0 +1,22 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: WhatsApp Support
+    url: https://wa.me/+31683656989
+    about: Use WhatsApp for quick questions or clarifications.
+
+  - name: Email Support
+    url: mailto:edusenjo@gmail.com
+    about: Contact maintainers privately for sensitive or long-form questions.
+
+   - name: 🟦 Onboarding / First Steps
+    url: https://github.com/<org>/<repo>/tree/main/FIRST-STEPS
+    about: Start here if you are new. Learn how to contribute properly.
+
+  - name: 📘 Project README
+    url: https://github.com/<org>/<repo>#readme
+    about: Learn what the project is and how to run it.
+
+  - name: 📚 Technical Documentation
+    url: https://github.com/<org>/<repo>/tree/main/docs
+    about: Architecture, design system, API contracts, workflows.
