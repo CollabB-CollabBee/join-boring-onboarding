@@ -1,0 +1,165 @@
+name: Thinking Task
+description: Low-effort task to demonstrate understanding before coding
+title: "Issue X: [FE/BE] Title"
+labels: ["task", "thinking"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🧠 Thinking Task  
+        This task helps you practice problem analysis before coding.  
+        There are no wrong answers — we want to understand your thinking.
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 Metadata
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Task
+        - Research
+        - Analysis
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - ⭐ (Thinking)
+        - ⭐⭐ (Moderate)
+        - ⭐⭐⭐ (Hard)
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: reference
+    attributes:
+      label: Reference
+      placeholder: "N/A or link"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        # 🧠 Part 1 — Contributor Thinking Task  
+        Fill in each section clearly.
+
+  - type: textarea
+    id: problem_understanding
+    attributes:
+      label: 1. Problem Understanding
+      placeholder: Describe the problem in your own words.
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 2. Requirements Extraction
+      placeholder: List functional and non-functional requirements.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_approach
+    attributes:
+      label: 3. Proposed Approach
+      placeholder: Outline how you would solve this.
+    validations:
+      required: true
+
+  - type: textarea
+    id: unknowns
+    attributes:
+      label: 4. Unknowns & Assumptions
+      placeholder: List anything unclear or missing.
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: 5. Risks & Alternatives
+      placeholder: Identify potential pitfalls and alternative approaches.
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance_interpretation
+    attributes:
+      label: 6. Acceptance Criteria — Your Interpretation
+      placeholder: Rewrite the AC in your own words.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: 7. Effort Estimate
+      options:
+        - 1–2 hours
+        - 2–4 hours
+        - 4–8 hours
+    validations:
+      required: true
+
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: 8. Confidence Level
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        # 🛠️ Part 2 — Technical Tasks  
+        *(For maintainers or future implementation.)*
+
+  - type: checkboxes
+    id: technical_tasks
+    attributes:
+      label: Technical Tasks
+      options:
+        - label: T1 — …
+        - label: T2 — …
+        - label: T3 — …
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        # 📏 Acceptance Criteria  
+        *(You only interpret these above.)*
+
+        - AC1 — …
+        - AC2 — …
+        - AC3 — …
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        # 📚 Standards & Compliance  
+        *(For reference only.)*
+
+        - ISO/IEC XXXX  
+        - NIST XXXX  
+        - OWASP ASVS Section X  
+        - IEEE SRS/SDD conventions
